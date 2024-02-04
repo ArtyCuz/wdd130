@@ -1,21 +1,46 @@
+
 body {
+    padding: 0;
+    margin: 0;
     background-color: lightblue;
 }
-
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: lightseagreen;
+}
 .nav_link {
     padding: 10px;
     color: black;
     font-size: 1.4em;
+    text-decoration: none;
 }
 
 img{
-    width: 300px;
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+a:hover {
+    color: blue;
+    background-color: white;
 }
 
 #main_title {
     font-size: 4em;
+    text-align: center;
+}
+p {
+    text-align: center;
 }
 
 #sub_title {
     color: red
+}
+footer {
+    background-color: lightseagreen;
+    padding: 20px;
+}
+footer a{
+    color: white;
 }
