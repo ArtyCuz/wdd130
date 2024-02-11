@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 body {
     padding: 0;
     margin: 0;
@@ -20,6 +20,8 @@ img{
     width: 30%;
     display: block;
     margin: 0 auto;
+    Border: 5px solid black;
+    border-radius: 50%;
 }
 a:hover {
     color: blue;
@@ -29,6 +31,7 @@ a:hover {
 #main_title {
     font-size: 4em;
     text-align: center;
+    font-family: "Protest Riot";
 }
 p {
     text-align: center;
@@ -43,4 +46,14 @@ footer {
 }
 footer a{
     color: white;
+}
+main p {
+    width: 60%;
+    margin: 50px auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 30px;
+    background-color:aliceblue;
+    border: 5px solid black;
+    border-radius: 40%;
 }
