@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabbed Interface</title>
+<style>
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+  /* Style the buttons that open the tabs */
+  .tablink {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .tablink:hover {
+    background-color: #ddd;
+  }
+</style>
+<script>
+  // JavaScript function to open the selected city tab
+  function openCity(cityName, elmnt, color) {
+    var i, tabcontent, tablinks;
+
+    // Hide all tab content
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Remove the 'active' class from all tab buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(cityName).style.display = "block";
+
+    // Add the 'active' class to the button that opened the tab
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+</head>
+<body>
+
+<div id="Rexburg" class="tabcontent">
+  <h1>Rexburg</h1>
+  <p>Location of BYUI</p>
+</div>
+
+<div id="New Zealand" class="tabcontent">
+  <h1>New Zealand</h1>
+  <p>Most Beautiful Place in the World</p>
+</div>
+
+<div id="Mexico" class="tabcontent">
+  <h1>Mexico</h1>
+  <p>Great Food</p>
+</div>
+
+<div id="WDD130" class="tabcontent">
+  <h1>WDD130</h1>
+  <p>Best Class</p>
+</div>
+
+<button class="tablink" onclick="openCity('Rexburg', this, 'red')" id="defaultOpen">Rexburg</button>
+<button class="tablink" onclick="openCity('New Zealand', this, 'green')">New Zealand</button>
+<button class="tablink" onclick="openCity('Mexico', this, 'blue')">Mexico</button>
+<button class="tablink" onclick="openCity('WDD130', this, 'orange')">WDD130</button>
+
+</body>
+</html>
