@@ -177,3 +177,16 @@ h2 {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+.strat {
+    background-color:rgb(40, 105, 209);
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 3/8;
+    grid-row: 2/8;
+    box-shadow: 5px 5px 10px black;
+    color:white;
+}
+.mariostrats:hover {
+    opacity: .6;
+    transform: scale(1.1);  
+}
